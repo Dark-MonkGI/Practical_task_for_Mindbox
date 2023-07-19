@@ -1,17 +1,17 @@
--- Допустим, у нас следующая структура:
+-- Р”РѕРїСѓСЃС‚РёРј, Сѓ РЅР°СЃ СЃР»РµРґСѓСЋС‰Р°СЏ СЃС‚СЂСѓРєС‚СѓСЂР°:
 --    Products (ProductID, ProductName)
 --    Categories (CategoryID, CategoryName)
 --    Product_Categories (ProductID, CategoryID)
--- Тогда, чтобы получить все пары "Имя продукта - Имя категории", можно сформировать запрос так:
+-- РўРѕРіРґР°, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РІСЃРµ РїР°СЂС‹ "РРјСЏ РїСЂРѕРґСѓРєС‚Р° - РРјСЏ РєР°С‚РµРіРѕСЂРёРё", РјРѕР¶РЅРѕ СЃС„РѕСЂРјРёСЂРѕРІР°С‚СЊ Р·Р°РїСЂРѕСЃ С‚Р°Рє:
 
 
 SELECT 
 	P.ProductName, C.CategoryName
 FROM 
 	Products P LEFT JOIN Product_Categories PC 
-	                ON P.ProductID = PC.ProductID
+	                 ON P.ProductID = PC.ProductID
 			   LEFT JOIN Categories C 
-			        ON PC.CategoryID = C.CategoryID
+			         ON PC.CategoryID = C.CategoryID
 
 
---С LEFT JOIN  все продукты будут включены в результат, даже если у них нет соответствующих категорий 
+--РЎ LEFT JOIN  РІСЃРµ РїСЂРѕРґСѓРєС‚С‹ Р±СѓРґСѓС‚ РІРєР»СЋС‡РµРЅС‹ РІ СЂРµР·СѓР»СЊС‚Р°С‚, РґР°Р¶Рµ РµСЃР»Рё Сѓ РЅРёС… РЅРµС‚ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёС… РєР°С‚РµРіРѕСЂРёР№ 
