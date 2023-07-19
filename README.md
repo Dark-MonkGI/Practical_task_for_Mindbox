@@ -22,6 +22,6 @@
 
 SQL-запрос для этой задачи можно найти в файле [`SQLQuery`](https://github.com/Dark-MonkGI/Practical_task_for_Mindbox/tree/main/SQL_Query/SQLQuery1.sql).
 
-## Отправка задания
+## Результат
 
 Оба задания были выполнены, и решения представлены в этом репозитории.
