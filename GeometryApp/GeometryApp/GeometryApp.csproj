@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <Reference Include="AreaCalculationLib">
-      <HintPath>..\..\AreaCalculationLib\AreaCalculationLib\bin\Debug\net6.0\AreaCalculationLib.dll</HintPath>
+      <HintPath>..\AreaCalculationLib.dll</HintPath>
     </Reference>
   </ItemGroup>
 
